@@ -1,0 +1,99 @@
+<h2 class="title">Market Risk Analysis</h2>
+
+<!-- Option Selector -->
+<nav class="nav-buttons">
+  <button
+    (click)="setSelectedOption('import')"
+    [class.active]="selectedOption === 'import'"
+    aria-label="Import CSV"
+  >
+    Single Stock
+  </button>
+  <button
+    (click)="setSelectedOption('portfolio')"
+    [class.active]="selectedOption === 'portfolio'"
+    aria-label="Portfolio"
+  >
+    Portfolio
+  </button>
+</nav>
+
+<hr />
+
+<!-- ============================= -->
+<!-- Single Stock Import Section -->
+<!-- ============================= -->
+<div *ngIf="selectedOption === 'import'" class="section import-section">
+  <h3>Import CSV File</h3>
+  <input
+    type="file"
+    accept=".csv"
+    (change)="onFileChanges($event)"
+    class="file-input"
+  />
+</div>
+
+<!-- ============================= -->
+<!-- Portfolio Upload Section -->
+<!-- ============================= -->
+<div *ngIf="selectedOption === 'portfolio'" class="section portfolio-section">
+  <h3>Import CSV Files</h3>
+
+  <div *ngFor="let fileObj of csvFiles; let i = index" class="csv-upload-row">
+    <div class="file-weightage-wrapper">
+      <input
+        type="file"
+        accept=".csv"
+        (change)="onFileChange($event, i)"
+        class="file-input"
+      />
+      <div class="weightage-wrapper">
+        <label for="weightage-{{ i }}" class="weightage-label">Weightage in Percent:</label>
+        <div class="weightage-input-group">
+          <input
+            id="weightage-{{ i }}"
+            type="number"
+            [(ngModel)]="fileObj.weightage"
+            class="portfolio-input"
+            placeholder="Weightage %"
+            min="0"
+            max="100"
+          />
+          <span class="percent-symbol">%</span>
+        </div>
+      </div>
+
+      <!-- Show delete button except for first -->
+      <button *ngIf="i > 0" class="delete-button" (click)="removeCsvFile(i)">Delete</button>
+    </div>
+  </div>
+
+  <button (click)="addCsvFile()" class="add-button">Add</button>
+</div>
+
+<!-- ============================= -->
+<!-- Generate Result or Clear Button -->
+<!-- ============================= -->
+<div *ngIf="!showResult">
+  <button
+    class="result-btn"
+    (click)="selectedOption === 'portfolio' ? submitPortfolio() : toggleResult()"
+  >
+    Generate Result
+  </button>
+</div>
+<div *ngIf="showResult">
+  <button class="clear-btn" (click)="clearResult()">Clear Result</button>
+</div>
+
+<!-- ============================= -->
+<!-- Result Display Section -->
+<!-- ============================= -->
+<div *ngIf="showResult" class="result-box">
+  <h4>Result:</h4>
+  <p>
+    {{ selectedOption === 'import'
+      ? 'Single stock risk analysis complete.'
+      : 'Portfolio analysis result ready.' }}
+  </p>
+</div>
