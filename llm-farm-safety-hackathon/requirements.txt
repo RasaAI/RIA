@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+opencv-python
+insightface
+numpy
+ultralytics
+pygame
+twilio
+google-api-python-client
+google-auth
+sqlalchemy
+psycopg2-binary
+langchain
+langchain-openai
+python-dotenv
+pydantic
+requests
