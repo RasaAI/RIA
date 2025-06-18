@@ -78,7 +78,7 @@ market\_risk\_model/
    ```bash
    git clone https://github.com/your-username/market_risk_model.git
    cd market_risk_model
-````
+   ````
 
 2. Install dependencies:
 
@@ -159,8 +159,8 @@ You can view the result graphs and UI previews in the [`assets/images`](./assets
 
 Built by:
 
-* **Adza Rajasekhar E A**
 * **Infant Anto D**
+* **Adza Rajasekhar E A**
 * **Lourdu Virgin Maria P**
 
 **Mentor:** Santhosh P
