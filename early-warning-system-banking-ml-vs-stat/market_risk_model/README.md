@@ -149,12 +149,6 @@ http://localhost:4200/
 
 ---
 
-## 📸 Screenshots (Optional)
-
-You can view the result graphs and UI previews in the [`assets/images`](./assets/images) folder.
-
----
-
 ## 👨‍👩‍👧‍👦 Credits
 
 Built by:
