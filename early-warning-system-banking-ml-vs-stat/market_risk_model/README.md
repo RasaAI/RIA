@@ -173,6 +173,6 @@ See the [LICENSE](./LICENSE) file for details.
 
 ## 🙌 Acknowledgements
 
-Thanks to the organizing team Rasa Institute of Analytics and Rasa.Ai Labs of the hackathon for the opportunity, and the contributors of open-source tools and research that made this project possible.
+Thanks to the organizing team, Rasa Institute of Analytics, and Rasa.AI Labs of the hackathon for the opportunity, and the contributors of open-source tools and research that made this project possible.
 
 ---
