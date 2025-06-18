@@ -1,0 +1,7 @@
+yfinance
+os
+numpy
+pandas
+sklearn
+torch
+pickle
