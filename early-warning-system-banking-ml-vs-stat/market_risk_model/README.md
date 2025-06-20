@@ -4,7 +4,6 @@
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green.svg)](https://fastapi.tiangolo.com/)
 [![Angular](https://img.shields.io/badge/Angular-Frontend-red.svg)](https://angular.io/)
-[![Hackathon Project](https://img.shields.io/badge/Status-Hackathon-blueviolet.svg)]()
 
 A hybrid deep learning-based Market Risk Analysis system to predict **Value at Risk (VaR)** and **Expected Shortfall (ES)** for **individual stocks** and **investment portfolios** over 30, 60, and 90-day horizons.
 
