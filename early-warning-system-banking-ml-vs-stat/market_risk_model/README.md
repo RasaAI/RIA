@@ -42,29 +42,29 @@ This project was developed during a hackathon to provide internal risk analysis 
 
 ```
 
-market\_risk\_model/
+market_risk_model/
 ├── requirements.txt
 ├── README.md
 ├── assets/
 │   └── images/                 # Graphs of model performance (Actual vs Predicted)
 ├── data/
-│   ├── training/               # Simulated training data
-│   │   ├── individual\_simulated.csv
-│   │   └── portfolio\_simulated.csv
-│   └── import\_real\_data.py     # Fetch real-time data
+│   ├── training               # Simulated training data
+│   │   ├── individual_simulated.csv
+│   │   └── portfolio_simulated.csv
+│   └── import_real_data.py     # Fetch real-time data
 ├── docs/
-│   ├── API documentation/
+│   ├── API documentation
 │   ├── installation.md
 │   └── userguide.md
 ├── src/
 │   ├── frontend/               # Angular frontend code
 │   └── ml models/             # Python ML scripts and trained model pickle files
-│       ├── individual\_preprocessing.py
-│       ├── individual\_ensemble.py
-│       ├── portfolio\_preprocessing.py
-│       ├── portfolio\_GAT.py
-│       ├── individual\_ensemble.pkl
-│       └── portfolio\_GAT.pkl
+│       ├── individual_preprocessing.py
+│       ├── individual_ensemble.py
+│       ├── portfolio_preprocessing.py
+│       ├── portfolio_GAT.py
+│       ├── individual_ensemble.pkl
+│       └── portfolio_GAT.pkl
 
 ````
 
