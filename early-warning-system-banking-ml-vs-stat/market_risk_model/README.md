@@ -58,6 +58,8 @@ market_risk_model/
 ├── src/
 │   ├── frontend/               # Angular frontend code
 │   └── ml models/             # Python ML scripts and trained model pickle files
+│       ├── main_individual.py
+│       ├── main_portfolio.py
 │       ├── individual_preprocessing.py
 │       ├── individual_ensemble.py
 │       ├── portfolio_preprocessing.py
