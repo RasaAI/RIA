@@ -113,5 +113,5 @@ async def analyze_stocks(files: List[UploadFile] = File(...)):
     except Exception as e:
         return {"error": str(e)}
 
-#if _name_ == "_main_":
- #   uvicorn.run(app, host="127.0.0.1", port=8000)
+if _name_ == "_main_":
+   uvicorn.run(app, host="127.0.0.1", port=8000)
